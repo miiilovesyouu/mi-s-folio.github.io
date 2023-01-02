@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #e0aa77;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #e0aa77;
+}
+
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav li a:hover,
+.nav .menu-btn:hover{
+    color: #000000;
+}
+
+.nav .menu{
+    clear: both;
+    max-height: 0;
+    text-transform:uppercase;
+    transition: max-height .2s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav .menu-icon{
+    cursor: pointer;
+    float:right;
+    padding: 28px 50%;
+    position:relative;
+    user-select: none;
+}
+
+.nav .menu-icon .nav-icon{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.nav .menu-icon .nav-icon::before,
+.nav .menu-icon .nav-icon::after{
+    background-color: rgb(0, 0, 0);
+    content: '';
+    display: block;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.nav .menu-icon .nav-icon::before{
+    top:5px;
+}
+
+.nav .menu-icon .nav-icon:after{
+    top: -5px;
+}
+
+.nav .menu-btn{
+    display: none;
+}
+
+.nav .menu-btn:checked ~ .menu{
+    max-height: 471px;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top:0;;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top:0;;
+}
+
+@media(min-width:45em){
+    .nav li{
+        display: inline-table;
+    }
+    .nav .menu{
+        clear:none;
+        display: block;
+        max-height: none;
+    }
+    .nav .menu-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px){
+    #content-left{
+        float: none;
+        margin-right: 0;
+        width: auto;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+#conteneur-home{
+    font-family: Times New Roman, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.63);
+    width:100%;
+    background:url(https://png.pngtree.com/thumb_back/fh260/background/20210501/pngtree-aesthetic-brown-golden-marble-background-image_691059.jpg) fixed 100% no-repeat;
+    background-size:cover;
+    padding:159.5px 0px 100px 0px;
+    text-align:center;
+
+}
+.home{
+    width:100%;
+}
+
+
+h3{
+    margin: 100px;
+    align-items: center;
+    font-size: 40px;
+    color: #ffffff94;
+}
+
+#conteneur-portfolio{
+    background-color:#EEE;
+  }
+
+  .portfolio{
+    max-width:960px;
+    width:100%;
+    margin:auto;
+    text-align:center;
+  }
+
+  .portfolio h2{
+    padding-bottom:50px;
+    font-size:25px;
+    font-weight:100;
+    text-transform:uppercase;
+  }
+
+  .conteneur-portfolio h2{
+    padding-bottom:100px;
+    font-size:80px;
+    color:#000;
+    text-align:center;
+  }
+
+  .conteneur-miniature-left{
+    box-shadow:0 0 20px 1px rgba(0,0,0,0.25);
+    transition:.4s;
+    width:47.5%;
+    margin-right:2.5%;
+    float:left;
+  }
+
+  .conteneur-miniature-right{
+    box-shadow:0 0 20px 1px rgba(0,0,0,0.25);
+    transition:.4s;
+    width:47.5%;
+    margin-left:2.5%;
+    float:left;
+  }
+
+  .miniature-portfolio{
+    width:100%;
+    height:250px;
+  }
+
+  .oneport{
+    background-image:(https://play-lh.googleusercontent.com/nmlRyKIwnJlY1ZRqhkSdkosVp_ySer9k6BqQ-GdYgPR2hbxkICIFHRu0rJwgzjKRNjk=w240-h480-rw);
+    background-size:cover;
+  }
+
+  .twoport{
+    background-image: (https://play-lh.googleusercontent.com/nmlRyKIwnJlY1ZRqhkSdkosVp_ySer9k6BqQ-GdYgPR2hbxkICIFHRu0rJwgzjKRNjk=w240-h480-rw);
+    background-size:cover;
+  }
+
+  .text-miniature{
+    padding:15px 30px 15px 15px;
+  }
+  .text-miniature h3{
+    font-family: Times New Roman, Verdana, sans-serif;
+    color: #000;
+    font-size:50px;
+    padding-bottom:10px;
+    font-weight:100;
+  }
+  .conteneur-miniature-one:hover{
+    box-shadow:0 0 20px 1px rgba(0,0,0,0.75);
+    transition:.4s;
+  }
+  

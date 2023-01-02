@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #e0aa77;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #e0aa77;
+}
+
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav li a:hover,
+.nav .menu-btn:hover{
+    color: #000000;
+}
+
+.nav .menu{
+    clear: both;
+    max-height: 0;
+    text-transform:uppercase;
+    transition: max-height .2s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav .menu-icon{
+    cursor: pointer;
+    float:right;
+    padding: 28px 50%;
+    position:relative;
+    user-select: none;
+}
+
+.nav .menu-icon .nav-icon{
+    background-color: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.nav .menu-icon .nav-icon::before,
+.nav .menu-icon .nav-icon::after{
+    background-color: #333;
+    content: '';
+    display: block;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.nav .menu-icon .nav-icon::before{
+    top:5px;
+}
+
+.nav .menu-icon .nav-icon:after{
+    top: -5px;
+}
+
+.nav .menu-btn{
+    display: none;
+}
+
+.nav .menu-btn:checked ~ .menu{
+    max-height: 471px;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top:0;;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top:0;;
+}
+
+@media(min-width:45em){
+    .nav li{
+        display: inline-table;
+    }
+    .nav .menu{
+        clear:none;
+        display: block;
+        max-height: none;
+    }
+    .nav .menu-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px){
+    #content-left{
+        float: none;
+        margin-right: 0;
+        width: auto;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+#conteneur-home{
+    font-family: Times New Roman, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.63);
+    width:100%;
+    background:url(https://png.pngtree.com/thumb_back/fh260/background/20210501/pngtree-aesthetic-brown-golden-marble-background-image_691059.jpg) fixed 100% no-repeat;
+    background-size:cover;
+    padding:159.5px 0px 100px 0px;
+    text-align:center;
+
+}
+.home{
+    width:100%;
+}
+
+#content{
+    color: white;
+    float:left;
+    margin-right: 50px;
+    width: 100%;
+}
+
+input, textarea {
+    border: none;
+    padding: 1rem;
+    font-family: 'Overlock', Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 40%;
+    transition: 200ms;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="text"]:not(output):not(:focus),
+  input[type="email"]:not(output):not(:focus),
+  textarea {
+    border-bottom: 1px solid #fafafa;
+    background: transparent;
+    color: #fafafa;
+    font-size: 1.8rem;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="text"]:not(output):focus,
+  input[type="email"]:not(output):focus,
+  textarea:focus {
+    border-bottom: 1px solid #000000;
+  }
+  
+  input[type="submit"] {
+    background: #000000;
+    color: #fafafa;
+    margin-top: 1rem;
+    width: auto;
+    float: right;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    cursor: pointer;
+    color: #333;
+    background: #fafafa;
+  }
+  
+  ::placeholder {
+    color: #fafafa;
+  }
+  
+  @media only screen and (max-width: 1149px) {
+    #contact .social a {
+      display: block;
+    }
+  }
+  
+@media only screen and (max-width: 649px) {
+#contact {
+      clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
+      padding: 0;
+    }
+}
+
+#conteneur-footer{
+    padding:10px 0px;
+    text-align:center;
+}
+
+.footer a{
+    color: #1f1d1d;
+    padding: 10px;
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+  
+.footer a:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #9b5564;
+    color: white;
+}
+  
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-twitter {
+    background: #2d5abd;
+    color: white;
+}
+
+
+.footer{
+    background: #e0aa77;
+    clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: -100px 0 0px;
+    z-index: 1;
+  }
